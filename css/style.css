@@ -1,0 +1,637 @@
+/* --------common css start-------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 940px;
+    margin:0 auto;
+}
+.clr{
+    clear: both;
+}
+@font-face{
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-BOLD.OTF);
+    font-family:'MYRIADPRO-BOLD';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-COND.OTF);
+    font-family:'MYRIADPRO-COND';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+    font-family:'MYRIADPRO-REGULAR';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-SEMIBOLD.OTF);
+    font-family:'MYRIADPRO-SEMIBOLD';
+}
+
+/* ------common css end--------- */
+/* -------header css start------- */
+#header{
+    background-color:#0872b9;
+    height: 32px;
+}
+.container-text{
+    width: 50%;
+    float: left;
+}
+.container-text p{
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-icon{
+    float: left;
+    width: 50%;
+    text-align: end;
+}
+.container-icon a{
+    margin: 15px;
+    color: #ffff;
+    line-height: 32px;
+    transition: all linear 0.5s;
+}
+.container-icon a:hover{
+    color: #353535;
+}
+/* ------header css end------- */
+/* ------navber css start------- */
+#navber{
+    background-color: #fff;
+    height: 80px;
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+.logo a{
+    line-height: 80px;
+    
+}
+.menuber{
+    width: 80%;
+    float: left;
+}
+.menuber ul li{
+    float: left;
+    /* text-align: right; */
+
+}
+.menuber ul{
+    float: right;
+}
+.menuber ul li a{
+    margin: 15px;
+    line-height: 80px;
+    font-size: 14px;
+    font-family:'MYRIADPRO-REGULAR';
+    color: #353535;
+    transition: all linear 0.5s;
+}
+.menuber ul li a:hover{
+    color: #6a9ccc;
+}
+/* ------navber css end------- */
+
+/* ------banner css start------- */
+#banner{
+    background: url(../images/Beatles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 87px 0;
+    position: relative;
+    z-index: 1;
+
+}
+#banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.58);
+    z-index: -1;
+
+}
+.banner-text{
+    text-align: right;
+    float: right;
+}
+.banner-text h1{
+    font-size: 40px;
+    font-family:'MYRIADPRO-REGULAR';
+    color: #ffff;
+}
+.banner-text h2{
+    color: #ffff;
+    font-size: 30px;
+    font-family:'MYRIADPRO-REGULAR';
+    padding-top: 24px;
+    
+}
+.banner-text p{
+    color: #ffff;
+    width: 470px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-top: 30px;
+}
+.banner-btn{
+    padding-top: 40px;
+    
+}
+.banner-btn a{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #ffff;
+    border: 1px solid #ffff;
+    padding: 10px 20px;
+    margin: 15px;
+    transition: all linear 0.5s;
+
+}
+.banner-btn a:hover{
+    background-color: #0872b9;
+    border: 1px solid #0872b9;
+}
+/* ------banner css end------- */
+
+/* ------about css start------- */
+#about{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.common-title{
+    position: relative;
+    display: inline-block;
+}
+.common-title h3{
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #353535;
+}
+.common-title img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.row{
+    padding-top: 40px;
+}
+.man-photo{
+    width: 380px;
+    float: left;
+    margin-right: 20px;
+}
+.photo-text{
+    float: left;
+    width: 540px;
+    
+}
+.photo-text p{
+    padding-top: 44px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    text-align: left;
+    color: #555555;
+}
+.photo-text p span{
+    padding-top: 20px;
+    display: block;
+}
+/* ------About css end------- */
+/* ------Services css start------- */
+#services{
+    text-align: center;
+    padding-bottom: 60px;
+    
+}
+.service-row{
+    padding-top: 68px;
+}
+.service-col{
+    width: 31.9%;
+    background: #f1f1f1;
+    padding: 50px 25px 20px 21px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+.service-col h3{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #353535;
+}
+.service-col p{
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 20px;
+    text-align: center;
+    width: 258px;
+    
+}
+.col-icon{
+    height: 70px;
+    width: 70px;
+    background-color: #f1f1f1;
+    line-height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition: 0.5s;
+}
+.col-icon::after{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    height: 71px;
+    width: 71px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    transition: 0.5s;
+}
+.col-icon::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
+    border: 4px solid #ffff;
+}
+.service-row .service-col:nth-child(3){
+    margin: 0;
+}
+.service-col:hover .col-icon{
+    background-color: #5bc5f4;
+}
+.service-col:hover .col-icon::after{
+    border-color: #5bc5f4;
+}
+.service-col:hover{
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0.2);
+}
+
+
+/* ------Services css end------- */
+/* ------portfolio css start------- */
+#portfolio{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.port-col{
+    float: left;
+    margin-right: 20px;
+}
+.port-row{
+    padding-top: 30px;
+}
+.port-col:nth-child(4){
+    margin-right: 0;
+}
+.port-img{
+    margin-top: 20px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* opacity: 0; */
+    transition: all linear 0.5s;
+    transform: scale(0);
+}
+.overlay a{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #5bc5f4;
+    line-height: 40px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+}
+.port-img:hover .overlay{
+    /* opacity: 1; */
+    transform: scale(1 );
+}
+
+/* ------portfolio css end------- */
+/* ------portfolio css start------- */
+#team{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.team-row{
+    padding-top: 30px;
+}
+.team-col{
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.team-col:nth-child(4){
+    margin-right: 0;
+}
+.team-img{
+    position: relative;
+}
+.team-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background: #606060;
+    padding-top: 30px;
+    /* opacity: 0; */
+    transition: all linear 0.5s;
+}
+.team-icon ul li{
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+    background: #5bc5f4;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffff;
+}
+.team-icon ul li a{
+    color: #fff;
+}
+.team-col h3{
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #353535;
+    transition: all linear 0.5s;
+}
+.team-col p{
+    padding-top: 5px;
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #777777;
+}
+.team-col h3:hover{
+    color: #5bc5f4;
+}
+.team-img:hover .team-icon{
+    opacity: 1;
+    width: 80px;
+}
+.team-img:hover{
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0.2);;
+}
+    
+/* ------portfolio css end------- */
+/* ------Testimonial css start------- */
+#Testimonial{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.testimonial-row{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.testimonial-col{
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+.testimonial-col:nth-child(2){
+    padding-right: 0px;
+}
+.test-img{
+    padding-bottom: 50px;
+}
+.test-details{
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+}
+.test-details h3{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #353535;
+}
+.test-details i{
+    color: #5bc5f4;
+    font-size: 10px;
+}
+.test-details h5{
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #747474;
+}
+.test-details p{
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #747474;
+    line-height: 24px;
+}
+.test-details::after{
+    height: 40px;
+    width: 40px;
+    content: "";
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    background: #f1f1f1;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+
+}
+/* ------Testimonial css end------- */
+/* ------footer css start------- */
+#footer{
+    background: #353535;
+    height: 300px;
+}
+.footer-col{
+    width: 25%;
+    float: left;
+}
+.footer-col img{
+    padding-top: 20px;
+    
+}
+.footer-col p{
+    color: #fff4f4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 30px;
+    text-align: left;
+}
+.footer-col span{
+    padding-top: 40px;
+    display: block;
+}
+
+
+/* ======FOOTER COL-1======= */
+
+
+
+
+.footer-col-1{
+    width: 25%;
+    float: left;
+}
+.footer-col-1 h2{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 40px;
+}
+.phone{
+    display: inline-block;
+    padding-top: 30px;
+}
+.footer-col-1:first-child{
+    padding-top: 0;
+}
+.phone-img{
+    float: left;
+}
+.phone-num{
+    float: left;
+    padding-left: 10px;
+}
+.phone-num p{
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/* ======FOOTER COL-1======= */
+
+
+
+
+
+.footer-col-2{
+    width: 20%;
+    float: left;
+}
+.footer-col-2 h2{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 40px;
+}
+.footer-col-2 a{
+    color: #ffff;
+    display: inline-block;
+    
+}
+/* =======FOOTER COL 3===== */
+
+.footer-col-3{
+    float: left;
+    width: 30%;
+}
+.footer-col-3 h2{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 40px;
+}
+.foo-img{
+    padding-top: 30px;
+    float: left;
+}
+
+.img-part{
+    margin-top: 10px;
+}
+.footer-col-2 p a{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    padding-top: 10px;
+    transition: all linear 0.5s;
+}
+.footer-col-2 a:hover {
+    color: #5bc5f4;
+    
+}
+.saifullah{
+    padding-top: 10px;
+}
+
+
+/* ------footer css end------- */
+/* ------copyright css start------- */
+
+
+#copyright{
+    height: 40px;
+    background: #555555;
+    line-height: 40px;
+    text-align: center;
+    color: #ffff;
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif ;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.text a{
+    color: #5bc5f4;
+}
+
+
+
+
+/* ------copyright css end------- */
+
+
